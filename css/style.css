@@ -1,0 +1,74 @@
+/* Exercicio 9 */
+body {
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  height: 100%;
+}
+
+.container {
+  width: 500px;
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+#preco {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.col-5 {
+  width: 90%;
+  float: left;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bt{
+  padding: 24px 40px;
+
+}
+
+/*Exercicio 11*/
+.ex11-h2{
+  text-align: center;
+}
+
+.ex11 {
+  padding: 20px;
+  background-color: #333;
+}
+
+.ex11-a input[type="text"]{
+  width: 93%;
+  float: left;
+}
+
+.ex11-c {
+  color: green;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.ex11-c label {
+  margin-right: 20px;
+}
+
+.nome{
+  padding: 12px 20px;
+}
+
+.ex11-as::after{
+  content: '';
+  clear: both;
+  display: table;
+}
