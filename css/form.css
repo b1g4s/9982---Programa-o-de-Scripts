@@ -1,6 +1,8 @@
 body{
   font-family: Arial;
   margin: 0;
+  background-color: #333;
+  color: white;
 }
 
 input[type=text], input[type=number] {
@@ -33,6 +35,7 @@ div.container{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  color: black;
 }
 
 p{
@@ -41,6 +44,6 @@ p{
   font-size: 14px;
 }
 
-h2 {
+h2, h1{
   text-align: center;
 }
