@@ -295,3 +295,65 @@ function primos() {
   }
   document.getElementById('output3').innerHTML = prim;
 }
+
+//exercicio 19 arrays
+function carros() {
+  let c1 = document.getElementById('carro1').value;
+  let c2 = document.getElementById('carro2').value;
+  let c3 = document.getElementById('carro3').value;
+
+  carrosImp(c1, c2, c3);
+}
+
+function carrosImp(a, b, c){
+  let str = "";
+  
+  str = a + "<br>" + b + "<br>" + c;
+  document.getElementById('output4').innerHTML = str;
+} 
+
+function carros2(){
+  let fav = [];
+  fav[0] = document.getElementById('carro4').value;
+  fav[1] = document.getElementById('carro5').value;
+  fav[2] = document.getElementById('carro6').value;
+  carrosImp2(fav);
+}
+
+function carrosImp2(a){
+  let str="";
+  for(let i=0;i<3;i++){
+    str = str + a[i]+ "<br>";
+  }
+  document.getElementById('output5').innerHTML = str;
+}
+
+let fav2 = [];
+function carros3(){
+  fav2[0] = document.getElementById('carro7').value;
+  fav2[1] = document.getElementById('carro8').value;
+  fav2[2] = document.getElementById('carro9').value;
+} 
+
+function carrosImp3(a) {
+  let str = "";
+  for (let i = 0; i < 3; i++) {
+    str += a[i] + "<br>"; 
+  }
+  document.getElementById('output6').innerHTML = str;
+}
+
+let fav3 = [];
+function carros4(){
+  fav3[fav3.length] = document.getElementById('carro10').value;
+  document.getElementById('carro10').value = "";
+  document.getElementById('carro10').focus();
+}
+
+function carrosImp4(a) {
+  let str = "";
+  for (let i=0; i < a.length; i++) {
+    str += a[i] + "<br>";
+  }
+  document.getElementById('output7').innerHTML = str;
+}
