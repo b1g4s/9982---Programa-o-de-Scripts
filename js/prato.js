@@ -3,6 +3,7 @@ function plate(){
   prato[prato.length] = document.getElementById('prato').value;
   document.getElementById('prato').value = "";
   document.getElementById('prato').focus();
+  prato.sort();
 
 }
 function plateImp(a) {

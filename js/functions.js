@@ -357,3 +357,41 @@ function carrosImp4(a) {
   }
   document.getElementById('output7').innerHTML = str;
 }
+
+//exercicio 20 datas
+function hoje() {
+  const d = new Date();
+  const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  const weekDays = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado",];
+
+  let d1 = weekDays[d.getDay()];
+  let d2 = d.getDate();
+  let d3 = monthNames[d.getMonth()];
+  let d4 = d.getFullYear();
+
+  document.getElementById('h').innerHTML = d;
+  document.getElementById('h1').innerHTML = d1;
+  document.getElementById('h2').innerHTML = d2;
+  document.getElementById('h3').innerHTML = d3;
+  document.getElementById('h4').innerHTML = d4;
+}
+
+//exercicio 20 datas v2
+function hojev2() {
+  const d = new Date();
+  const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  const weekDays = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado",];
+
+  let d1 = weekDays[d.getDay()];
+  let d2 = d.getDate();
+  let d3 = monthNames[d.getMonth()];
+  let d4 = d.getFullYear();
+  let data = d1 + ", " + d2 + " de " + d3 + " de " + d4;
+
+  let h = d.getHours();
+  let m = d.getMinutes();
+  let horas = h + ":" + m;
+
+  document.getElementById('data-v2').innerHTML = data;
+  document.getElementById('horas-v2').innerHTML = horas;
+}

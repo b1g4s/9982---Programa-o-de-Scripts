@@ -3,6 +3,7 @@ body{
   margin: 0;
   background-color: #333;
   color: white;
+  height: 100%;
 }
 
 input[type=text], input[type=number] {
@@ -46,4 +47,19 @@ p{
 
 h2, h1{
   text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.data {
+  color: white;
 }
